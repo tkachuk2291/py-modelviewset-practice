@@ -4,7 +4,6 @@ from author.models import Author
 
 
 class AuthorSerializer(serializers.ModelSerializer):
-    id = serializers.IntegerField(read_only=True)
     first_name = serializers.CharField(max_length=64)
     last_name = serializers.CharField(max_length=64)
     pseudonym = serializers.CharField(
